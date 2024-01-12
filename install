@@ -8,8 +8,9 @@ cd llama.cpp
 make
 echo "download tiny llama"
 curl -o "tinyllama-1.1b-chat-v0.4.q8_0.gguf" https://huggingface.co/afrideva/TinyLlama-1.1B-Chat-v0.4-GGUF/resolve/main/tinyllama-1.1b-chat-v0.4.q8_0.gguf
-echo "to run ai type ai-run"
+echo "wait it some thing for esy run"
 cd $PREFIX/bin
-curl -O 
+curl -O https://raw.githubusercontent.com/artiomborovinskii/Eazylama/main/ai-run
 chmod +X ai-run
 cd
+echo "to run ai type ai-run"
