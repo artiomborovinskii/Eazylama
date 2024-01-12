@@ -1,0 +1,4 @@
+#! /data/data/com.termux/files/usr/bin/sh
+cd ~/llama.cpp
+./server -m tinyllama-1.1b-chat-v0.4.q8_0.gguf
+open http://localhost:8080
