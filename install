@@ -1,0 +1,15 @@
+echo 'upgrade Termux'
+pkg update
+pkg upgrade
+echo "install some"
+pkg install git make curl
+git clone https://github.com/ggerganov/llama.cpp
+cd llama.cpp
+make
+echo "download tiny llama"
+curl -o "tinyllama-1.1b-chat-v0.4.q8_0.gguf" https://huggingface.co/afrideva/TinyLlama-1.1B-Chat-v0.4-GGUF/resolve/main/tinyllama-1.1b-chat-v0.4.q8_0.gguf
+echo "to run ai type ai-run"
+cd $PREFIX/bin
+curl -O 
+chmod +X ai-run
+cd
